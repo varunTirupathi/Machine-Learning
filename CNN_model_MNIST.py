@@ -252,7 +252,6 @@ error_knn_10 = []
 for train_index, test_index in kf.split(training_data, training_labels):
     X_train, X_test, y_train, y_test = training_data[train_index], training_data[test_index], training_labels[train_index], training_labels[test_index]
 
-# Code adapted from http://parneetk.github.io/blog/cnn-mnist/
     #CNN
     #First convolution layer
     model = Sequential()
